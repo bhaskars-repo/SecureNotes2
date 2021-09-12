@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="static/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="static/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="static/js/axios.min.js"></script>
+        <script src="static/js/main.js"></script>
+        <title>Secure Notes - Sign Up</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <p class="text-white">Secure Notes - Sign Up</a>
+            </nav>
+            <br/>
+            <form>
+                <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" onblur="clearSignup()" required placeholder="Enter email...">
+                    <div class="col-sm-3">
+                        <small id="email-err" class="text-danger"></small>      
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="passwordInput">Password</label>
+                    <input type="password" class="form-control" id="password1" name="password1" onblur="clearSignup()" required placeholder="Enter password...">
+                    <div class="col-sm-3">
+                        <small id="pass1-err" class="text-danger"></small>      
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="passwordInput">Confirm Password</label>
+                    <input type="password" class="form-control" id="password2" name="password2" onblur="clearSignup()" required placeholder="Confirm password...">
+                    <div class="col-sm-3">
+                        <small id="pass2-err" class="text-danger"></small>      
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="mySignup(); return false;">Register</button>
+            </form>
+            <div class="text-center">
+                <hr/>
+                <img class="img-thumbnail" src="static/images/polarsparc.png" alt="PolarSPARC">
+            </div>
+        </div>        
+    </body>
+</html>
